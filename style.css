@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #424242;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 65px;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 10px;
+    color: black;
+}
+
+.link__img {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+}
+
+.link__text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.link:hover {
+    opacity: 0.85;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link:active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table__item {
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.table__item img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 222px;
+}
+
+.item__inner h2 {
+    font-size: 22px;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #6A3DF7;
+    color: #fff;
+    border-color: #6A3DF7;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all .1s linear;
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+.btn:active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-middle {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-large {
+    width: 320px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* table */
+
+.cart-out {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+table.cart {
+    border-collapse: collapse;
+    border: 2px solid  #d3d3d3;
+}
+
+table.cart td {
+    border: 2px solid #d3d3d3;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+table.cart img {
+    width: 48px;
+}
+
+table.cart span.total {
+    font-weight: 700;
+}
